@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class order extends Model
+{
+    use HasFactory;
+    protected $table='orders';
+    protected $fillable=['product_name','product_id','client_name','client_number','order','price','quantity'];
+}
